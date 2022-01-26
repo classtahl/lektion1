@@ -1,0 +1,16 @@
+Inom mjukvaru-projekt är beteendedriven utveckling ( BDD ) en smidig mjukvaruutvecklingsprocess som uppmuntrar 
+samarbete mellan utvecklare, kvalitetssäkringstestare och kundrepresentanter i ett programvaruprojekt.
+Det uppmuntrar team att använda konversation och konkreta exempel för att formalisera en gemensam förståelse 
+för hur applikationen ska bete sig. [4] Det kom från testdriven utveckling (TDD). 
+[Beteendedriven utveckling kombinerar de allmänna teknikerna och principerna för TDD (Test Driven Development) 
+med idéer från domändriven design och objektorienterad analys och design för att förse mjukvaruutveckling och 
+ledningsteam med delade verktyg och en delad process för att samarbeta kring mjukvaruutveckling. [2] [7]
+Även om BDD huvudsakligen är en idé om hur mjukvaruutveckling ska hanteras av både affärsintressen och teknisk insikt, 
+förutsätter BDD-praktiken användningen av specialiserade mjukvaruverktyg 
+för att stödja utvecklingsprocessen. Även om dessa verktyg ofta utvecklas specifikt för användning i BDD-projekt, kan de ses 
+som specialiserade former av verktygen som stödjer testdriven utveckling. 
+Verktygen tjänar till att lägga till automatisering till det allestädes närvarande språket som är ett centralt tema för BDD.
+BDD underlättas till stor del genom användningen av ett enkelt domänspecifikt språk (DSL) med naturliga språkkonstruktioner 
+(t.ex. engelska-liknande meningar) som kan uttrycka beteendet och de förväntade resultaten. 
+Testskript har länge varit en populär tillämpning av DSL:er med varierande grad av sofistikering. 
+BDD anses vara en effektiv teknisk praxis, särskilt när "problemutrymmet" för affärsproblemet att lösa är komplext. [8]
