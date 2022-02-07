@@ -1,3 +1,8 @@
+// Simple test o get a responsetime
+
+
+
+
 var request = require('request');
 
 let start_time = new Date().getTime();
