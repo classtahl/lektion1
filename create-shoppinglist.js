@@ -6,7 +6,7 @@ var headers = {
 };
 var shoppingList = { //Variabel som skickas som en json till servern
     "Id": 1436855792,
-    "Title": "LISTA",  // Rubrik på inköpslista
+    "Title": "LIISTA",  // Rubrik på inköpslista
     "CommentText": "",
     "SortingStore":0,
     "Rows":[
@@ -25,7 +25,7 @@ var shoppingList = { //Variabel som skickas som en json till servern
         }
     ],
     "LatestChange":"2022-02-04T20:52:20Z",
-    "OfflineId":"DA62122B-0739-40E0-943D-77B0B870FCDB",
+    "OfflineId":"DA62122B-0739-40E0-943D-77B0B870FCDB",   // För att kunna göra ett test använder vi samma id på shoppinglista // Det skulle vara tomt för en helt ny shoppinglista.
     "IsPrivate":false,
     "IsSmartList":false
 }
@@ -41,7 +41,7 @@ function callback4(error, response, body) {
     if (!error && response.statusCode == 200) {
         console.log(body);
         let data = JSON.stringify(body);
-        fs.writeFileSync('./create.json',data);
+        fs.writeFileSync('./shoppinglist.json',data);
     }
 }
 request(options, callback4);

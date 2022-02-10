@@ -1,9 +1,0 @@
-
-Inom mjukvaru-projekt är beteendedriven utveckling (BDD) en praxis som går att tillämpa med tillfredställande resultat. 
-Det uppmuntrar till att använda konkreta exempel för att ge ett uttryck om en gemensam förståelse för hur mjukvaran 
-ska bete sig. Enligt Wikipedia ”kombinerar de allmänna teknikerna och principerna för (TDD) (Test Driven Development) 
-med idéer från domändriven design och objektorienterad analys och design för att förse mjukvaruutveckling och ledningsteam 
-med delade verktyg”. Om aspekter med user stories tillämpas inom BBD är det också lättare att göra automatiska tester eftersom 
-de är förhållandevis binära som tex undersöka en login funktion, verifiera data, svarstider och annat som mjukvaran alstrar 
-med tämligen enkla medel dvs det behövs inga stora verktyg för att göra dessa tester. Överlag anser jag att BDD är ett av 
-många bra verktyg för utveckling och testning av mjukvara dock är det inte det enda verktyg som bör styra testning.

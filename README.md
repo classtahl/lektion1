@@ -1,3 +1,9 @@
+2022-02-09
+Jag ls
+
+
+
+
 Nu är det dags att skriva lite nya tester till projektet.
 Det är lite kvar att göra
 

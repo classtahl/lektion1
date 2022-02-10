@@ -78,30 +78,30 @@
   });
                     
   
-  test('the shoppinglist const has surname on it', () => {
-  expect(shoppinglist).toContain('Ståhl');
-  expect(new Set(shoppinglist)).toContain('Ståhl');
+  test('the shoppinglist const has item on it', () => {
+  expect(shoppinglist).toContain('ShoppingLists');
+  expect(new Set(shoppinglist)).toContain('ShoppingLists');
   });
 
 
-  test('the shoppinglist const has zipcode on it', () => {
-  expect(shoppinglist).toContain('28150');
-  expect(new Set(shoppinglist)).toContain('28150');
+  test('the shoppinglist const has item on it', () => {
+  expect(shoppinglist).toContain('ShoppingLists');
+  expect(new Set(shoppinglist)).toContain('ShoppingLists');
   });
 
-  test('the shoppinglist const has city on it', () => {
-  expect(shoppinglist).toContain('HÄSSLEHOLM');
-  expect(new Set(shoppinglist)).toContain('HÄSSLEHOLM');
+  test('the shoppinglist const has item on it', () => {
+  expect(shoppinglist).toContain('LISTA');
+  expect(new Set(shoppinglist)).toContain('LISTA');
   });
 
-  test('the shoppinglist const has gender on it', () => {
-  expect(shoppinglist).toContain('Man');
-  expect(new Set(shoppinglist)).toContain('Man');
+  test('the shoppinglist const has item on it', () => {
+  expect(shoppinglist).toContain('grädde');
+  expect(new Set(shoppinglist)).toContain('grädde');
   });
 
-  test('the shoppinglist const has birthyear on it', () => {
-  expect(shoppinglist).toContain('1973');
-  expect(new Set(shoppinglist)).toContain('1973');
+  test('the shoppinglist const has item on it', () => {
+  expect(shoppinglist).toContain('mjölk');
+  expect(new Set(shoppinglist)).toContain('mjölk');
   });
 
 
