@@ -12,7 +12,7 @@ var headers = {
 };
 
 var options = {
-    url: 'https://handla.api.ica.se//api/recipes/random?numberofrecipes=1', //hyperlänken som slupar receptet siffran anger hur många svar som skall skickas tillbaka
+    url: 'https://handla.api.ica.se//api/recipes/random?numberofrecipes=1', //hyperlänken som slupar x antal recept, siffran anger hur många som skall som skall skickas tillbaka
     headers: headers
 };
 
