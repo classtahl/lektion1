@@ -11,9 +11,10 @@ var options = {
 
 async function callback(error, response, body) {
     if (!error && response.statusCode == 200) {
-      
-       let data = JSON.stringify(body);
-       fs.writeFileSync('./user.json',data); //Låt oss spara det Ica skickar tillbaka som en användare
+       const objData = JSON.parse(body);
+       const data = JSON.stringify(objData, null, 4);
+
+       fs.writeFileSync('./user.json', data); //Låt oss spara det Ica skickar tillbaka som en användare
     }
 }
 
@@ -24,7 +25,7 @@ request.get(options, (err, res, body) => {
         return console.log("Err" + err);
     }
     console.log(`Status: ${res.statusCode}`);   // Skickar statusvar från servern 200 = OK
-    console.log(body);
+    
 });
 
 
