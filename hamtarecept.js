@@ -18,8 +18,9 @@ var options = {
 
 function callback(error, response, body) {
     if (!error && response.statusCode == 200) {
-        console.log(body);
-        let data = JSON.stringify(body);
+        const objData = JSON.parse(body);
+        const data = JSON.stringify(objData, null, 2);
+       
         fs.writeFileSync('./slumpatrecept.json',data);  //Sparar svaret som ett json objekt
     }
 }
