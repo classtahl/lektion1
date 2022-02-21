@@ -6,4 +6,5 @@ it('Get 401 status with faulty user credentials, this means that login is incorr
   .withAuth('Authorization', 'Basic MTk3MzAyMDQ3OTEwOjMxNDE111==')
   .expectStatus(401);
 
+
 });
