@@ -17,6 +17,6 @@ it('Get 401 status without any login information, this means that login fails', 
     .expectStatus(401); // Server should return with answer 401 without user credentials
 });
 
-});
+
 
 
