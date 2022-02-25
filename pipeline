@@ -1,0 +1,37 @@
+********************
+* Jenkins pipeline *
+********************
+                      pipeline {
+                        agent any
+                          tools { nodejs "NODEJS" }
+                      stages {
+                          stage('Tools initiated') {
+                      steps {
+                      sh 'npm -v'
+                      sh 'git --version'
+                }
+            }
+                      stage('Hämtar källkod') {
+                      steps {
+                      git branch: 'main',
+                      url:'https://github.com/classtahl/lektion1/'
+                }
+            }
+                      stage('Bygger') {
+                      steps {
+                      sh 'npm install'
+                      sh 'npm install jest'
+                      sh 'npm install pactum'
+
+                }
+            }
+                      stage('Login Test') {
+                      steps {
+                      sh 'npm test'
+                }
+          }
+      }
+  }
+
+
+
