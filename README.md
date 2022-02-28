@@ -1,5 +1,7 @@
-2022-02-09
-Jag ls
+Logg 28/-02-28
+
+Tester i Pactum är på väg...
+Jag har fokuserat på annan testautamation som inte täcks här.
 
 
 
