@@ -1,6 +1,6 @@
 const pactum = require('pactum');
 
-it('get 200 status from ica-api', async () => {
+it('get 200 status from ica-api when customer can login with credentials', async () => {
    await pactum.spec()
      .withMethod('GET')
     .get('https://handla.api.ica.se/api/login')
@@ -11,7 +11,7 @@ it('get 200 status from ica-api', async () => {
 
 
 
-it('get 401 status from ica-api with faulty Authorization', async () => {
+it('get 401 status from ica-api with faulty Authorization credentials', async () => {
   await pactum.spec()
   .withMethod('GET')
  .get('https://handla.api.ica.se/api/login')
@@ -56,6 +56,18 @@ it('get a random recipe, measure responstime', async () => {
    .expectStatus(200);
  
 });
+
+it('Search for an article and get server response', async () => {
+  await pactum.spec()
+   .withMethod('GET')
+   .get('https://handla.api.ica.se/api/upclookup?upc=7310070124906')
+   .expectStatus(200);
+ 
+ 
+});
+
+
+
 
 
 
