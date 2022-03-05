@@ -6,6 +6,7 @@ it('get 200 status from ica-api when customer can login with credentials', async
     .get('https://handla.api.ica.se/api/login')
     .withHeaders('Authorization', 'Basic NzMwMjA0NzkxMDozMTQxNTk=')
     .expectStatus(200);
+    
   
 });
 
@@ -35,7 +36,7 @@ it('get a random recipe, measure responstime', async () => {
     .get('https://handla.api.ica.se//api/recipes/random?numberofrecipes=1')
    
     .expectStatus(200)
-    .expectResponseTime(10000); //had to change from 1000 to 10000 due to flakiness
+    .expectResponseTime(1000); //had to change from 200 to 1000 due to flakiness
   
   });
 
@@ -57,7 +58,7 @@ it('get a random recipe, measure responstime', async () => {
  
 });
 
-it('Search for an article and get server response', async () => {
+it('Search for an article and get server response status OK', async () => {
   await pactum.spec()
    .withMethod('GET')
    .get('https://handla.api.ica.se/api/upclookup?upc=7310070124906')
